@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="11">
+      <module name="Thmanyah.app" target="21" />
+      <module name="Thmanyah.core.data" target="21" />
+      <module name="Thmanyah.core.database" target="21" />
+      <module name="Thmanyah.core.designsystem" target="21" />
+      <module name="Thmanyah.core.domain" target="21" />
+      <module name="Thmanyah.core.navigation" target="21" />
+      <module name="Thmanyah.core.network" target="21" />
+      <module name="Thmanyah.core.testing" target="21" />
+      <module name="Thmanyah.core.ui" target="21" />
+      <module name="Thmanyah.feature.content.api" target="21" />
+      <module name="Thmanyah.feature.content.impl" target="21" />
+      <module name="Thmanyah.feature.search.api" target="21" />
+      <module name="Thmanyah.feature.search.impl" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
