@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="core_ui_worst_to_best">Worst to best</string>
+    <string name="core_ui_best_to_worst">Best to worst</string>
+    <string name="core_ui_sort_reviews">Sort reviews</string>
+</resources>
