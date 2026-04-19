@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_product_impl_products">Products</string>
+    <string name="feature_product_impl_loading_products">Loading products</string>
+    <string name="feature_product_impl_something_happened">Something happened</string>
+    <string name="feature_product_impl_search_products">Search products</string>
+    <string name="feature_product_impl_clear_search">Clear search</string>
+
+    <string name="feature_product_impl_no_rating">No rating</string>
+    <string name="feature_product_impl_anonymous">Anonymous</string>
+    <string name="feature_product_impl_expand_reviews">Show reviews</string>
+    <string name="feature_product_impl_collapse_reviews">Hide reviews</string>
+</resources>
