@@ -3,8 +3,7 @@
 > ⚠️ **Over-engineering disclaimer**: This is a single-feature app built with the same architecture
 > you'd use for a large-scale, multi-team production application. A real app of this scope would
 > not need this level of modularization. This is intentional — the goal is to demonstrate
-> familiarity with modern Android architecture patterns as seen in
-> [Now in Android](https://github.com/android/nowinandroid).
+> familiarity with modern Android architecture patterns.
 
 ## Features
 
@@ -12,15 +11,14 @@ The app has a single feature: **Products**. It allows users to:
 
 - Browse a list of beauty products with reviews
 - Search products by name
-- Sort products by review rating (best to worst / worst to best)
+- Sort reviews within each product (best to worst / worst to best) via a floating button
 
 ---
 
 ## Architecture
 
 The app follows the
-[official Android architecture guidance](https://developer.android.com/topic/architecture) and is
- inspired by the [Now in Android](https://github.com/android/nowinandroid) project.
+[official Android architecture guidance](https://developer.android.com/topic/architecture).
 
 The architecture is built around three main principles:
 
@@ -131,6 +129,9 @@ Contains the Sephora design system:
 Composables that depend on both `:core:designsystem` and `:core:model` — components that are too
 domain-aware to live in the design system but too reusable to live in a feature module.
 
+Currently contains:
+- `SortFab` — floating action button with a dropdown to sort reviews by rating, takes `ReviewSortField` from `:core:model`
+
 ### `:core:testing`
 Test-only module. Contains everything needed to test other modules in isolation:
 - `TestProductRepository` — in-memory fake for unit/UI tests
@@ -154,8 +155,7 @@ The full product feature implementation:
 
 ## Testing strategy
 
-The testing approach mirrors Now in Android — each layer is tested in isolation using the
-appropriate test double.
+Each layer is tested in isolation using the appropriate test double.
 
 | Layer | Test type | Source set | Approach |
 |---|---|---|---|
@@ -215,8 +215,7 @@ These are out of scope for an interview project but would be natural next steps 
 
 ## Convention plugins
 
-Build logic is centralized in `build-logic/` using convention plugins, following the Now in Android
-approach:
+Build logic is centralized in `build-logic/` using convention plugins:
 
 | Plugin | Purpose |
 |---|---|
